@@ -1,38 +1,158 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Roboto:wght@700&display=swap');
+
+.homeTitle {
   text-align: center;
+  font-family: 'Comic Neue', cursive;
+  font-size: 100px;
+  margin-top: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.active {
+  color: rgb(255, 17, 17);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pokenav {
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homeContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.homeImg {
+  height: 700px;
+  margin-top: 20px;
+}
+
+.navbar {
+  font-family: 'Roboto', sans-serif;
+  background: #1d426d;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.masterball {
+  height: 80px;
+  width: 80px;
+}
+
+.navbarTitle {
+  color: white;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.navbarTitle__link {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.navbarTitle__link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbarTitle__link--active {
+  background-color: #1d426d;
+  color: #ff1117;
+}
+
+button {
+
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 2px 16px;
+  height: 38px;
+  min-width: 96px;
+  min-height: 38px;
+  border: none;
+  color: #fff;
+  background-color: rgb(88, 101, 242);
+  transition: background-color .17s ease, color .17s ease;
+}
+
+button:hover {
+  background-color: rgb(71, 82, 196);
+}
+
+select {
+  margin: 10px;
+  height: 30px;
+}
+
+.pokeTitle {
+
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+.pokeContainer {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+.pokeName {
+  font-family: 'Comic Neue', cursive;
+  font-size: 30px;
+  text-decoration: underline;
+  margin-top: 10px;
+
+}
+
+.pokeName:first-letter {
+  text-transform: uppercase;
+}
+
+.stats {
+  font-family: 'Comic Neue', cursive;
+}
+
+.type {
+  font-family: 'Comic Neue', cursive;
+  margin-left: 30px;
+}
+
+.type:first-letter {
+  text-transform: uppercase;
+}
+
+.detallesContainer {
+
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+body {
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.pokeImg {
+  height: 50px;
+  width: 120px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.homeImg2 {
+  height: 60px;
+  width: 60px;
 }
